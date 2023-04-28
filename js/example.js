@@ -22,3 +22,9 @@ for (let i = 0; i < dogs.length; i++) {
 // Fido is a large Mixed;
 // Fluffy is a large Poodle;
 // Spot is a small Chihuahua;
+
+// 1. operator new creates a new empty object;
+// 2. new adds the link to the new object to this;
+// 3. arguments are provided to parametrs;
+// 4. functon is called,the body of a function is executed;
+// 5. after function is called, new returns this (link to a new created object);
