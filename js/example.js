@@ -18,3 +18,7 @@ for (let i = 0; i < dogs.length; i++) {
     }
     console.log('Dog: ' + dogs[i].name + ' is a ' + size + ' ' + dogs[i].breed);
 }
+
+// Fido is a large Mixed;
+// Fluffy is a large Poodle;
+// Spot is a small Chihuahua;
