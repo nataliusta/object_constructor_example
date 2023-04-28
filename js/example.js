@@ -2,6 +2,13 @@ function Dog(name, breed, weight) {
     this.name = name;
     this.breed = breed;
     this.weight = weight;
+    this.bark = function() { // method 
+        if (this.weight > 25) {
+            alert(this.name + ' says Woof!');
+        } else { 
+            alert(this.name + ' says Yıp!');
+        }
+    };
 }
 
 let fido = new Dog('Fido', 'Mixed', 38);
