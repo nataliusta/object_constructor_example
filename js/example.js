@@ -1,3 +1,13 @@
+function Cat (name, breed, weight) {
+    this.name = name;
+    this.breed = breed;
+    this.weight = weight;
+}
+
+let meow = new Cat('Meow', 'Siamese', 10);
+let whiskers = new Cat('Whiskers', 'Mixed', 12);
+
+
 function Dog(name, breed, weight) { // object constructor
     this.name = name;
     this.breed = breed;
@@ -15,15 +25,14 @@ let fido = new Dog('Fido', 'Mixed', 38);
 let fluffy = new Dog('Fluffy', 'Poodle', 30);
 let sport = new Dog('Spot', 'Chihuahua', 10);
 
-let dogs = [fido, fluffy, sport];
+let dogs = [meow, whiskers, fido, fluffy, sport];
 
 for (let i = 0; i < dogs.length; i++) {
     let size = 'small';
 
-    if (dogs[i].weight > 10) {
-        size = 'large';
+    if (dogCatcher(dogs[i])) {
+        console.log(dogs[i].name + ' is a dog!');
     }
-    console.log('Dog: ' + dogs[i].name + ' is a ' + size + ' ' + dogs[i].breed);
 }
 
 function dogCatcher(obj) {
