@@ -28,7 +28,6 @@ let sport = new Dog('Spot', 'Chihuahua', 10);
 let dogs = [meow, whiskers, fido, fluffy, sport];
 
 for (let i = 0; i < dogs.length; i++) {
-    let size = 'small';
 
     if (dogCatcher(dogs[i])) {
         console.log(dogs[i].name + ' is a dog!');
