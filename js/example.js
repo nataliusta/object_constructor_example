@@ -20,7 +20,7 @@ let dogs = [fido, fluffy, sport];
 for (let i = 0; i < dogs.length; i++) {
     let size = 'small';
 
-    if (dogs[i].weight > 1) {
+    if (dogs[i].weight > 10) {
         size = 'large';
     }
     console.log('Dog: ' + dogs[i].name + ' is a ' + size + ' ' + dogs[i].breed);
